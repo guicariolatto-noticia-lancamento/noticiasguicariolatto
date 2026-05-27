@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matérias Gui Cariolatto - Portal Oficial</title>
+    <style>
+        :root {
+            --bg-color: #000000;
+            --card-bg: #111111;
+            --text-primary: #ffffff;
+            --text-secondary: #cccccc;
+            --accent-color: #ffffff;
+            --border-color: #333333;
+            --red-brand: #c41e3a;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 1px solid var(--border-color);
+            background: linear-gradient(to bottom, #1a1a1a, #000000);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: -1px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .header p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 20px auto 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            display: flex; flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #555555;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 220px;
+            background-color: #222;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-image img {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .category {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--red-brand);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .card h2 {
+            font-size: 1.4rem;
+            margin: 0 0 15px 0;
+            line-height: 1.3;
+            font-weight: 700;
+        }
+
+        .card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 60px 20px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Matérias Gui Cariolatto</h1>
+        <p>Explore a trajetória, as visões e o universo artístico de Gui Cariolatto através de coberturas exclusivas e análises profundas.</p>
+    </header>
+
+    <main class="container">
+        <div class="grid">
+            <!-- Artigo 1: Colapso -->
+            <a href="https://guicariolatto-noticia-lancamento.github.io/guicariolatto-noticia-da-colapso/" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="assets/images/colapso_main.webp" alt="O Arquiteto do Colapso">
+                </div>
+                <div class="card-content">
+                    <span class="category">CULTURA & SOCIEDADE</span>
+                    <h2>O Arquiteto do Colapso: Gui Cariolatto e o Xeque-Mate no Sistema</h2>
+                    <p>Em um mundo à beira da falência material e espiritual, Gui Cariolatto relança a profética 'Fim do Sistema Monetário'. Uma análise visceral sobre o colapso financeiro e a arte como resistência.</p>
+                </div>
+            </a>
+
+            <!-- Artigo 2: Revista G10 -->
+            <a href="https://web.archive.org/web/20250213134637/https://revistag10.com.br/mixando-a-vida-na-arte-deluxe-edition-o-mesmo-voo-porem-com-mais-amplitude/" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="https://web.archive.org/web/20250213134637im_/https://revistag10.com.br/wp-content/uploads/2025/01/IMG-20241223-WA0006-1024x1024.jpg" alt="Mixando a Vida na Arte">
+                </div>
+                <div class="card-content">
+                    <span class="category">MÚSICA</span>
+                    <h2>Mixando a Vida na Arte Deluxe Edition - O Mesmo Voo Porém com Mais Amplitude</h2>
+                    <p>Um mergulho profundo na obra monumental de 15 anos de Gui Cariolatto. Com 28 faixas, o álbum é uma jornada de resistência artística e espiritualidade que já alcançou milhares.</p>
+                </div>
+            </a>
+
+            <!-- Artigo 3: Vale do Silício -->
+            <a href="https://telegra.ph/Artista-denuncia-o-Vale-do-Sil%C3%ADcio-20-o-controle-tecnol%C3%B3gico-e-a-corrup%C3%A7%C3%A3o-art%C3%ADstica-em-novo-disco-visceral-05-15" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="assets/images/silicio_main.webp" alt="Vale do Silício 2.0">
+                </div>
+                <div class="card-content">
+                    <span class="category">TECNOLOGIA & ÉTICA</span>
+                    <h2>Artista denuncia o Vale do Silício 2.0: o controle tecnológico e a corrupção artística</h2>
+                    <p>Gui Cariolatto escancara o 'roubo de autoria' e a corrupção no Vale do Silício 2.0. Uma crítica contundente ao uso frio da tecnologia para apagar a fonte da arte independente.</p>
+                </div>
+            </a>
+
+            <!-- Artigo 4: Surrealismo -->
+            <a href="https://telegra.ph/Gui-Cariolatto-Das-Teias-da-Vis%C3%A3o-ao-Surrealismo-Musical--Sua-fixa%C3%A7%C3%A3o-por-aranhas-10-02" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="assets/images/surrealismo_main.webp" alt="Surrealismo Musical">
+                </div>
+                <div class="card-content">
+                    <span class="category">SURREALISMO</span>
+                    <h2>Gui Cariolatto: Das Teias da Visão ao Surrealismo Musical - Sua fixação por aranhas</h2>
+                    <p>Do ritual asteca ao encontro com entidades simbólicas: como Gui Cariolatto transmutou traumas e visões em uma estética surrealista única. A aranha como arquétipo de criação.</p>
+                </div>
+            </a>
+
+            <!-- Artigo 5: Sobre o Natural -->
+            <a href="https://telegra.ph/Sobre-o-Natural---Educa-Som-A-Nova-Joia-Audiovisual-de-Gui-Cariolatto-que-Redefine-a-Arte-e-a-Consci%C3%AAncia-10-22" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="assets/images/natural_main.webp" alt="Sobre o Natural">
+                </div>
+                <div class="card-content">
+                    <span class="category">EDUCAÇÃO & NATUREZA</span>
+                    <h2>Sobre o Natural - Educa Som: A Nova Joia Audiovisual que Redefine a Arte</h2>
+                    <p>Uma colaboração emocionante entre pai e filha. 'Sobre o Natural' é um manifesto audiovisual que une permacultura, cura global e protesto contra a tortura animal.</p>
+                </div>
+            </a>
+
+            <!-- Artigo 6: Stranger Things -->
+            <a href="https://telegra.ph/A-continua%C3%A7%C3%A3o-real-de-Stranger-Things-O-Arquiteto-da-Resson%C3%A2ncia-A-Maestria-Mental-de-Gui-Cariolatto-e-o-Abismo-de-Hawkins-01-07" class="card" target="_blank">
+                <div class="card-image">
+                    <img src="assets/images/stranger_main.webp" alt="Stranger Things">
+                </div>
+                <div class="card-content">
+                    <span class="category">ENTRETENIMENTO & MISTICISMO</span>
+                    <h2>A continuação real de Stranger Things: O Arquiteto da Ressonância</h2>
+                    <p>A sincronicidade cósmica entre Hawkins e a mente de Gui Cariolatto. Descubra como o projeto Ressonância se conecta ao Mundo Invertido e ao despertar da consciência.</p>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Discernimento da consciência artística multidisciplinar</p>
+        <p>&copy; 2026 Portal Gui Cariolatto. Todos os direitos reservados.</p>
+        <p><a href="https://linktr.ee/Guicariolatto" style="color: var(--text-secondary); text-decoration: none;" target="_blank">Acesse o LinkTree Oficial</a></p>
+    </footer>
+
+</body>
+</html>
