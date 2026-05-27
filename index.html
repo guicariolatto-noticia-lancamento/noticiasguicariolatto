@@ -132,6 +132,20 @@
             font-size: 0.9rem;
         }
 
+        .linktree-btn {
+            color: #ff0000 !important;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.04em; /* 4% maior que o padrão 0.9rem do footer */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: opacity 0.3s ease;
+        }
+
+        .linktree-btn:hover {
+            opacity: 0.8;
+        }
+
         @media (max-width: 768px) {
             .header h1 { font-size: 2rem; }
             .grid { grid-template-columns: 1fr; }
@@ -236,7 +250,7 @@
     <footer class="footer">
         <p>Discernimento da consciência artística multidisciplinar</p>
         <p>&copy; 2026 Portal Gui Cariolatto. Todos os direitos reservados.</p>
-        <p><a href="https://linktr.ee/Guicariolatto" style="color: var(--text-secondary); text-decoration: none;" target="_blank">Acesse o LinkTree Oficial</a></p>
+        <p><a href="https://linktr.ee/Guicariolatto" class="linktree-btn" target="_blank">ESCUTE GUI CARIOLATTO E MAIS INFORMAÇÕES</a></p>
     </footer>
 
 </body>
