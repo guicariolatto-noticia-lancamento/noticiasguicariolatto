@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guicariolatto-noticia-lancamento.github.io/noticiasguicariolatto/sitemap.xml
